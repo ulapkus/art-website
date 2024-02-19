@@ -1,26 +1,46 @@
 import React from "react";
 import Image from "next/image";
-import background from "../public/background.webp";
-import four from "../public/four.png";
-import one from "../public/one.png";
-import eight from "../public/eight.png";
-import five from "../public/five.png";
 
 const page = () => {
   return (
-    <div className="external">
-      <div className="horizontal-scroll-wrapper">
-        <div className="img-wrapper slower">
-          <Image className="four art" src={four} alt="artwork" />
+    <div className="main-page-again">
+      <div className="art-container">
+        <div className="art-first">
+          <div className="words-first">
+            <p className="first">SEE AVAILABLE</p>
+            <p className="first">PRINTS</p>
+          </div>
         </div>
-        <div className="img-wrapper slower">
-          <Image className="one art" src={one} alt="artwork" />
+        <div className="art-second">
+          <div className="words-second">
+            <p className="second">VIEW ARTWORK</p>
+          </div>
         </div>
-        <div className="img-wrapper slower">
-          <Image className="eight art" src={eight} alt="artwork" />
+        <div className="art-third">
+          <div className="words-third">
+            <p className="third">COLLECT ORIGINAL</p>
+            <p className="third">PAINTINGS</p>
+          </div>
         </div>
-        <div className="img-wrapper slower">
-          <Image className="five art" src={five} alt="artwork" />
+      </div>
+      <div className="footer">
+        {/* <h1>LET'S CONNECT!</h1> */}
+        <div className="footer-main">
+          <p className="footer-words">KLAPKUS@GMAIL.COM | </p>
+          <p className="footer-words socials">
+            <img
+              className="facebook-img"
+              src="https://static-00.iconduck.com/assets.00/facebook-icon-2048x2048-h5ikr429.png"
+            ></img>
+            FACEBOOK |
+          </p>
+          <p className="footer-words socials">
+            <img
+              className="insta-img"
+              src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
+            ></img>
+            INSTAGRAM
+          </p>
         </div>
       </div>
     </div>
