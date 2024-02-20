@@ -19,9 +19,9 @@ const Navbar = () => {
         <Link href="/about" className="nav-link">
           CONTACT
         </Link>
-        <Link href="/about" className="nav-link">
+        {/* <Link href="/about" className="nav-link">
           INSTAGRAM
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

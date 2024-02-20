@@ -7,8 +7,8 @@ const page = () => {
       <div className="art-container">
         <div className="art-first">
           <div className="words-first">
-            <p className="first">SEE AVAILABLE</p>
-            <p className="first">PRINTS</p>
+            <p className="first">SEE AVAILABLE PRINTS</p>
+            {/* <p className="first">PRINTS</p> */}
           </div>
         </div>
         <div className="art-second">
