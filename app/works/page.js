@@ -17,7 +17,56 @@ const page = () => {
   return (
     <div className="main">
       <div className="works-art-container">
-        <div className="flip-container">
+        <div className="art">
+          <Image className="art" src={one} alt="artwork" />
+          <div className="text">Text for Image One</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={two} alt="artwork" />
+          <div className="text">Text for Image Two</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={three} alt="artwork" />
+          <div className="text">Text for Image One</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={four} alt="artwork" />
+          <div className="text">Text for Image Two</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={five} alt="artwork" />
+          <div className="text">Text for Image One</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={six} alt="artwork" />
+          <div className="text">Text for Image Two</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={seven} alt="artwork" />
+          <div className="text">Text for Image One</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={eight} alt="artwork" />
+          <div className="text">Text for Image Two</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={nine} alt="artwork" />
+          <div className="text">Text for Image One</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={ten} alt="artwork" />
+          <div className="text">Text for Image Two</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={nine} alt="artwork" />
+          <div className="text">Text for Image One</div>
+        </div>
+        <div className="art">
+          <Image className="art" src={ten} alt="artwork" />
+          <div className="text">Text for Image Two</div>
+        </div>
+
+        {/* <div className="flip-container">
           <div className="flipper">
             <Image className="front" src={one} alt="artwork" />
             <div className="back">
@@ -146,7 +195,7 @@ const page = () => {
               <p className="back-words">HI</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="footer">
         <div className="footer-main">

@@ -147,7 +147,7 @@ h1 {
   width: 100%;
 }
 
-.back-words {
+.text {
   font-family: "Roboto Mono", monospace;
   letter-spacing: 0.2vw;
   font-size: 3vh;
@@ -157,6 +157,17 @@ h1 {
   color: beige;
   text-align: center;
 }
+
+/* .back-words {
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.2vw;
+  font-size: 3vh;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+  color: beige;
+  text-align: center;
+} */
 
 .art-first {
   display: flex;
@@ -177,15 +188,18 @@ h1 {
 .words-first,
 .words-second,
 .words-third {
+  /* color: black; */
   color: white;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 0.6vw;
   font-size: 3vh;
   text-align: center;
-  padding: 0 20vh 0 20vh;
+  padding: 0 10vh 0 10vh;
   text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.723);
   white-space: nowrap;
   font-weight: 200;
+  /* border: 1px solid blue; */
+  /* background-color: #fcf7ed; */
 }
 
 .first,
@@ -301,4 +315,38 @@ h2 {
 .about-p {
   font-family: "Roboto Mono", monospace;
   line-height: 170%;
+}
+
+.art {
+  position: relative;
+  display: inline-block;
+}
+.art::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcf7ed; /* Change this to whatever color you want */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.art:hover::after {
+  opacity: 1;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Change this to whatever color you want */
+  font-size: 16px; /* Change this to whatever font size you want */
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.art:hover .text {
+  opacity: 1;
 }
