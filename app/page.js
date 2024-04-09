@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const page = () => {
   return (
@@ -8,7 +7,6 @@ const page = () => {
         <div className="art-first">
           <div className="words-first">
             <p className="first">SEE AVAILABLE PRINTS</p>
-            {/* <p className="first">PRINTS</p> */}
           </div>
         </div>
         <div className="art-second">
@@ -24,16 +22,8 @@ const page = () => {
         </div>
       </div>
       <div className="footer">
-        {/* <h1>LET'S CONNECT!</h1> */}
         <div className="footer-main">
           <p className="footer-words">KLAPKUS@GMAIL.COM | </p>
-          <p className="footer-words socials">
-            <img
-              className="facebook-img"
-              src="https://static-00.iconduck.com/assets.00/facebook-icon-2048x2048-h5ikr429.png"
-            ></img>
-            FACEBOOK |
-          </p>
           <p className="footer-words socials">
             <img
               className="insta-img"
