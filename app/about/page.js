@@ -5,14 +5,11 @@ import kristebasement from "../../public/kristebasement.jpg";
 const about = () => {
   return (
     <div className="about">
-      <p className="about-p-one">Hi!</p>
-      <p className="about-p-two">My name is Kristė Aukštuolis. </p>
-      <p className="about-p-three">
-        I am a Lithuanian-American artist based out of Columbus, OH.{" "}
-      </p>
+      <p className="about-p-one">Hi! My name is Kristė Aukštuolis.</p>
+ 
 
       <p className="about-p">
-        As long as I can remember, I have been greatly influenced by my roots in
+      I am a Lithuanian-American artist based out of Columbus, OH. As long as I can remember, I have been greatly influenced by my roots in
         the life between Lithuania and America. Some of my refugee family
         members found peace through artwork-and I still use their artistic
         materials to this day. The play between light and darkness is prevalent

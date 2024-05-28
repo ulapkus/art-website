@@ -129,6 +129,7 @@ h1 {
 .insta-img {
   object-fit: contain;
   height: 3vh;
+  width: 3vh;
 }
 
 .gmail-logo {
@@ -172,7 +173,7 @@ h1 {
   padding: 0;
   margin: 0;
 
-  background-image: url("https://i.ibb.co/kx5dK0q/PXL-20231222-205339112.jpg");
+  background-image: url("https://i.ibb.co/nfH2mGP/PXL-20231222-205339112.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -303,7 +304,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 10vw 0 10vw;
+  padding: 0 10vw 5vw 10vw;
 }
 
 h2 {
@@ -315,33 +316,16 @@ h2 {
   font-family: "Roboto Mono", monospace;
   line-height: 170%;
   text-align: center;
+  padding: 2vw 0 2vw 0;
 }
 
 .about-p-one {
-  border: 1px solid blue;
   text-align: center;
   width: 100%;
-  font-size: 5vh;
+  font-size: 6vh;
   font-family: "Roboto Mono", monospace;
-
-}
-
-.about-p-two {
-  border: 1px solid blue;
-  text-align: center;
-  width: 100%;
-  font-size: 4vh;
-  font-family: "Roboto Mono", monospace;
-
-}
-
-.about-p-three {
-  border: 1px solid blue;
-  text-align: center;
-  width: 100%;
-  font-size: 3vh;
-  font-family: "Roboto Mono", monospace;
-
+  padding: 0;
+  margin: 0;
 }
 
 .kristebasement_container {

@@ -17,6 +17,7 @@ import twelve from "../../public/twelve.webp";
 import thirteen from "../../public/thirteen.webp";
 import fourteen from "../../public/fourteen.webp";
 import fifteen from "../../public/fifteen.jpg";
+import sixteen from "../../public/sixteen.jpg";
 import Footer from "../footer/footer";
 
 const page = () => {
@@ -27,14 +28,14 @@ const page = () => {
           <Image className="art_img" src={one} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">12 x 20</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={twelve} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">12 x 20</div>
           </div>
         </div>
         <div className="art">
@@ -48,84 +49,91 @@ const page = () => {
           <Image className="art_img" src={four} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">14 x 20</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={five} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">20 x 30</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={ten} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">9 x 12</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={eight} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">10 x 15</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={fourteen} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">10 x 15</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={nine} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">20 x 30</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={two} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">15 x 20</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={eleven} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">10 x 15</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={six} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">8 x 10</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={thirteen} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">8 x 10</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={seven} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
-            <div className="text">Text for image</div>
+            <div className="text">10 x 18</div>
           </div>
         </div>
         <div className="art">
           <Image className="art_img" src={fifteen} alt="artwork" />
           <div className="text_container">
             <div className="text">Text for image</div>
+            <div className="text">10 x 15</div>
+          </div>
+        </div>
+        <div className="art">
+          <Image className="art_img" src={sixteen} alt="artwork" />
+          <div className="text_container">
             <div className="text">Text for image</div>
+            <div className="text">15 x 20</div>
           </div>
         </div>
       </div>
