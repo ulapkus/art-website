@@ -1,14 +1,20 @@
 import React from "react";
+import Image from "next/image";
+import kristeportrait from "../../public/kristeportrait.jpg";
+import gmaillogo from "../../public/gmail.png";
 
 const contact = () => {
   return (
     <div className="contact">
-      <h3>CONTACT ME</h3>
       <div className="contact-main">
-        <p className="photo-contact">photo</p>
-        {/* <p className="words-contact">You can contact me directly at: </p> */}
+        <Image src={kristeportrait} className="photo-contact" />
         <div className="contact-bottom">
-          <p className="gmail-contact">KLAPKUS@GMAIL.COM</p>
+          <p className="contact-me">Feel free to contact me!</p>
+
+          <div className="gmail-container">
+            <Image src={gmaillogo} className="gmail-logo" />
+            <p className="gmail-contact">KLAPKUS@GMAIL.COM</p>
+          </div>
           <div className="contact-insta">
             <img
               className="insta-img"

@@ -17,7 +17,7 @@ const page = () => {
         <div className="art-third">
           <div className="words-third">
             <p className="third">COLLECT ORIGINAL</p>
-            <p className="third">PAINTINGS</p>
+            <p className="third">ARTWORK</p>
           </div>
         </div>
       </div>
