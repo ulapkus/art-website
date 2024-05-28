@@ -20,7 +20,7 @@ import fifteen from "../../public/fifteen.jpg";
 import sixteen from "../../public/sixteen.jpg";
 import Footer from "../footer/footer";
 
-const page = () => {
+const works = () => {
   return (
     <div className="main">
       <div className="works-art-container">
@@ -142,4 +142,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default works;
