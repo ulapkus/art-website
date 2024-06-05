@@ -18,7 +18,7 @@ const about = () => {
         beauty in the little things, even among the chaos that life can bring.
       </p>
       <div className="kristebasement_container">
-        <Image src={kristebasement} className="kristebasement" />
+        <Image src={kristebasement} className="kristebasement" alt=""/>
       </div>
     </div>
   );

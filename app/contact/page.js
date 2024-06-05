@@ -7,7 +7,7 @@ const contact = () => {
   return (
     <div className="contact">
       <div className="contact-main">
-        <Image src={kristeportrait} className="photo-contact" />
+        <Image src={kristeportrait} className="photo-contact" alt=""/>
         <div className="contact-bottom">
           <p className="contact-me">Feel free to contact me!</p>
 
