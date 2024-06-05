@@ -5,9 +5,9 @@ import kristebasement from "../../public/kristebasement.jpg";
 const about = () => {
   return (
     <div className="about">
-      <p className="about-p-one">Hi! My name is Kristė Aukštuolis.</p>
+      <p className="about_p_one">Hi! My name is Kristė Aukštuolis.</p>
 
-      <p className="about-p">
+      <p className="about_p">
         I am a Lithuanian-American artist based out of Columbus, OH. As long as
         I can remember, I have been greatly influenced by my roots in the life
         between Lithuania and America. Some of my refugee family members found

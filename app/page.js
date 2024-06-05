@@ -43,13 +43,14 @@ const page = () => {
           <Footermobile />
         </div>
       ) : (
-        <div>
+        <div className="art_container_container">
           <div className="art_container">
             <div className="art_first">
               <Link href="/works" className="first">
                 VIEW ARTWORK
               </Link>
             </div>
+            <div className="second_third">
             <div className="art_second">
               <Link href="/about" className="second">
                 ABOUT ME
@@ -59,6 +60,7 @@ const page = () => {
               <Link href="/contact" className="third">
                 CONTACT INFO
               </Link>
+            </div>
             </div>
           </div>
           <div className="footer">

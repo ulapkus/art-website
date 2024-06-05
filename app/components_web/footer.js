@@ -5,11 +5,11 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-main">
-        <p className="footer-words">KLAPKUS@GMAIL.COM | </p>
-        <p className="footer-words socials">
+      <div className="footer_main">
+        <p className="footer_words">KLAPKUS@GMAIL.COM | </p>
+        <p className="footer_words socials">
           <img
-            className="insta-img"
+            className="insta_img"
             src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
           ></img>
           INSTAGRAM

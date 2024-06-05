@@ -48,7 +48,7 @@ const Navbar = () => {
             KRISTE AUKŠTUOLIS
           </Link>
           <div className="main_links">
-            <Link href="./components_web/works" className="nav_link">
+            <Link href="/components_web/works" className="nav_link">
               WORKS
             </Link>
             <Link href="/about" className="nav_link">

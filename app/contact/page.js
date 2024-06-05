@@ -6,21 +6,21 @@ import gmaillogo from "../../public/gmail.png";
 const contact = () => {
   return (
     <div className="contact">
-      <div className="contact-main">
-        <Image src={kristeportrait} className="photo-contact" alt=""/>
-        <div className="contact-bottom">
-          <p className="contact-me">Feel free to contact me!</p>
+      <div className="contact_main">
+        <Image src={kristeportrait} className="photo_contact" alt=""/>
+        <div className="contact_bottom">
+          <p className="contact_me">Feel free to contact me!</p>
 
-          <div className="gmail-container">
-            <Image src={gmaillogo} className="gmail-logo" />
-            <p className="gmail-contact">KLAPKUS@GMAIL.COM</p>
+          <div className="gmail_container">
+            <Image src={gmaillogo} className="gmail_logo" />
+            <p className="gmail_contact">KLAPKUS@GMAIL.COM</p>
           </div>
-          <div className="contact-insta">
+          <div className="contact_insta">
             <img
-              className="insta-img"
+              className="insta_img"
               src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
             ></img>
-            <p className="insta-word">INSTAGRAM</p>
+            <p className="insta_word">INSTAGRAM</p>
           </div>
         </div>
       </div>
