@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
+@font-face {
+  font-family: 'coughymachineregular';
+  src: url('../public/coughymachine-webfont.woff2') format('woff2'),
+       url('../public/coughymachine-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #e9e2d5;
+  /* background-color: #e9e2d5; */
+  background-color: #DEDEDE;
 }
 
 .main_page {
@@ -69,7 +79,9 @@ body {
   text-decoration: none;
   color: black;
   padding: 4vh 0 1vh 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'coughymachineregular';
+
+  /* font-family: "Roboto Mono", monospace; */
   letter-spacing: 0.5vw;
 }
 
@@ -107,6 +119,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4vh;
+  width: 40%;
 }
 
 .art_container {
@@ -211,7 +224,7 @@ body {
 .third_mobile:hover {
   transition: font-size 0.3s ease;
   cursor: pointer;
-  font-size: 6vh;
+  font-size: 4vh;
   text-shadow: 0 0 10px #e9e7e3;
 }
 
@@ -269,7 +282,8 @@ body {
   width: 60%;
   padding: 0;
   margin: 0;
-  background-image: url("https://i.ibb.co/QdNp4hH/PXL-20231222-205339112.jpg");
+  background-color: rgb(191, 132, 191);
+  /* background-image: url("https://i.ibb.co/QdNp4hH/PXL-20231222-205339112.jpg"); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,8 +313,8 @@ body {
 .third:hover {
   transition: font-size 0.3s ease;
   cursor: pointer;
-  font-size: 6vh;
-  text-shadow: 0 0 10px #e9e7e3;
+  font-size: 4.5vh;
+  /* text-shadow: 0 0 10px #e9e7e3; */
 }
 
 .art_second {

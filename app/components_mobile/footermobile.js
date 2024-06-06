@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Footermobile = () => {
+export default function Footermobile() {
   return (
     <div className="footer_mobile">
       <div className="footer_main_mobile">
@@ -18,5 +18,3 @@ const Footermobile = () => {
     </div>
   );
 };
-
-export default Footermobile;

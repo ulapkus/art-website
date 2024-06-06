@@ -20,7 +20,7 @@ import fifteen from "../../../public/fifteen.jpg";
 import sixteen from "../../../public/sixteen.jpg";
 import Footermobile from "../footermobile";
 
-const worksmobile = () => {
+export default function Worksmobile() {
   return (
     <div className="main_mobile">
       <div className="works_art_container_mobile">
@@ -141,5 +141,3 @@ const worksmobile = () => {
     </div>
   );
 };
-
-export default worksmobile;

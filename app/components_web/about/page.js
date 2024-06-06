@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import kristebasement from "../../public/kristebasement.jpg";
+import kristebasement from "../../../public/kristebasement.jpg";
 
-const about = () => {
+export default function About() {
+
   return (
     <div className="about">
       <p className="about_p_one">Hi! My name is Kristė Aukštuolis.</p>
@@ -24,4 +25,3 @@ const about = () => {
   );
 };
 
-export default about;

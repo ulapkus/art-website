@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import kristeportrait from "../../public/kristeportrait.jpg";
-import gmaillogo from "../../public/gmail.png";
+import kristeportrait from "../../../public/kristeportrait.jpg";
+import gmaillogo from "../../../public/gmail.png";
 
-const contact = () => {
+export default function Contact() {
+
   return (
     <div className="contact">
       <div className="contact_main">
@@ -28,4 +29,3 @@ const contact = () => {
   );
 };
 
-export default contact;

@@ -46,21 +46,21 @@ const page = () => {
         <div className="art_container_container">
           <div className="art_container">
             <div className="art_first">
-              <Link href="/works" className="first">
+              <Link href="/components_web/works" className="first">
                 VIEW ARTWORK
               </Link>
             </div>
             <div className="second_third">
-            <div className="art_second">
-              <Link href="/about" className="second">
-                ABOUT ME
-              </Link>
-            </div>
-            <div className="art_third">
-              <Link href="/contact" className="third">
-                CONTACT INFO
-              </Link>
-            </div>
+              <div className="art_second">
+                <Link href="/about" className="second">
+                  ABOUT ME
+                </Link>
+              </div>
+              <div className="art_third">
+                <Link href="/contact" className="third">
+                  CONTACT INFO
+                </Link>
+              </div>
             </div>
           </div>
           <div className="footer">

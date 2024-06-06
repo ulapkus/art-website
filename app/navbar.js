@@ -29,15 +29,21 @@ const Navbar = () => {
           </Link>
           <div className="main_links_mobile">
             <Link
-              href="./components_mobile/works_mobile"
+              href="/components_mobile/works_mobile"
               className="nav_link_mobile"
             >
               WORKS
             </Link>
-            <Link href="/about" className="nav_link_mobile">
+            <Link
+              href="/components_mobile/about_mobile"
+              className="nav_link_mobile"
+            >
               ABOUT
             </Link>
-            <Link href="/contact" className="nav_link_mobile">
+            <Link
+              href="/components_mobile/contact_mobile"
+              className="nav_link_mobile"
+            >
               CONTACT
             </Link>
           </div>
@@ -51,10 +57,10 @@ const Navbar = () => {
             <Link href="/components_web/works" className="nav_link">
               WORKS
             </Link>
-            <Link href="/about" className="nav_link">
+            <Link href="/components_web/about" className="nav_link">
               ABOUT
             </Link>
-            <Link href="/contact" className="nav_link">
+            <Link href="/components_web/contact" className="nav_link">
               CONTACT
             </Link>
           </div>

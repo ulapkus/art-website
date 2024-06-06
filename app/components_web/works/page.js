@@ -20,9 +20,11 @@ import fifteen from "../../../public/fifteen.jpg";
 import sixteen from "../../../public/sixteen.jpg";
 import Footer from "../footer";
 
-const works = () => {
+export default function Works() {
+
   return (
     <div className="main">
+      
       <div className="works_art_container">
         <div className="art">
           <Image className="art_img" src={one} alt="" />
@@ -142,4 +144,4 @@ const works = () => {
   );
 };
 
-export default works;
+
