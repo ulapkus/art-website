@@ -5,8 +5,8 @@
 }
 
 body {
-  /* background-color: #e9e2d5; */
-  background-color: #dedede;
+  background-color: #e9e2d5;
+  /* background-color: #dedede; */
 }
 
 .main_page {
@@ -259,23 +259,9 @@ body {
   width: 3vh;
 }
 
-.art_first {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  overflow: hidden;
-  height: 94vh;
-  width: 60%;
-  padding: 0;
-  margin: 0;
-  background-image: url("https://i.ibb.co/QdNp4hH/PXL-20231222-205339112.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
+.viewartwork {
+  height: 100%;
+  width: 100%;
 }
 
 .first,
@@ -294,20 +280,48 @@ body {
   text-decoration: none;
 }
 
+/* 
 .first:hover,
 .second:hover,
 .third:hover {
   transition: font-size 0.3s ease;
   cursor: pointer;
   font-size: 4.5vh;
-  /* text-shadow: 0 0 10px #e9e7e3; */
-}
+} */
 
-.art_second {
+.home_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 20px rgb(0, 0, 0);
+  font-size: 4vh;
+}
+
+.home_text:hover {
+  transition: font-size 0.3s ease;
+  font-size: 4.5vh;
+}
+
+.art_first {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  height: 94vh;
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.art_second {
+  position: relative;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -315,19 +329,12 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("https://i.ibb.co/NV6L3yF/PXL-20240527-004308597-RAW-01-COVER.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 5px;
 }
 
 .art_third {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -335,11 +342,6 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("https://i.ibb.co/BK12mB0/PXL-20240527-004758954.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 5px;
 }
 

@@ -19,7 +19,7 @@ export default function About() {
         beauty in the little things, even among the chaos that life can bring.
       </p>
       <div className="kristebasement_container">
-        <Image src={kristebasement} className="kristebasement" alt=""/>
+        <Image src={kristebasement} className="kristebasement" alt="" priority/>
       </div>
     </div>
   );

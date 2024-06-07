@@ -3,6 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Footermobile from "./components_mobile/footermobile";
+import viewartwork from "../public/viewartwork.jpg";
+import basement from "../public/PXL_20240527_004428340.RAW-01.COVER.jpg";
+import kristebasement from "../public/kristebasement.jpg";
+import pastels from "../public/pastelsorganized.jpg";
+import Image from "next/image";
 
 const page = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -47,18 +52,36 @@ const page = () => {
           <div className="art_container">
             <div className="art_first">
               <Link href="/components_web/works" className="first">
-                VIEW ARTWORK
+                <p className="home_text">VIEW ARTWORK</p>
+                <Image
+                  src={viewartwork}
+                  className="viewartwork"
+                  alt=""
+                  priority
+                ></Image>
               </Link>
             </div>
             <div className="second_third">
               <div className="art_second">
-                <Link href="/about" className="second">
-                  ABOUT ME
+                <Link href="/components_web/about" className="second">
+                  <p className="home_text">ABOUT ME</p>
+                  <Image
+                    src={pastels}
+                    className="viewartwork"
+                    alt=""
+                    priority
+                  ></Image>
                 </Link>
               </div>
               <div className="art_third">
-                <Link href="/contact" className="third">
-                  CONTACT INFO
+                <Link href="/components_web/contact" className="third">
+                  <p className="home_text">CONTACT INFO</p>
+                  <Image
+                    src={basement}
+                    className="viewartwork"
+                    alt=""
+                    priority
+                  ></Image>
                 </Link>
               </div>
             </div>

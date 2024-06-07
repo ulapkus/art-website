@@ -4,11 +4,10 @@ import kristeportrait from "../../../public/kristeportrait.jpg";
 import gmaillogo from "../../../public/gmail.png";
 
 export default function Contact() {
-
   return (
     <div className="contact">
       <div className="contact_main">
-        <Image src={kristeportrait} className="photo_contact" alt=""/>
+        <Image src={kristeportrait} className="photo_contact" alt="" priority />
         <div className="contact_bottom">
           <p className="contact_me">Feel free to contact me!</p>
 
@@ -27,5 +26,4 @@ export default function Contact() {
       </div>
     </div>
   );
-};
-
+}
