@@ -101,7 +101,7 @@
   font-size: 4vh;
   color: white;
   font-weight: 300;
-  letter-spacing: .5vw;
+  letter-spacing: 0.5vw;
 }
 
 .home_text:hover {
@@ -199,16 +199,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 10vw 5vw 10vw;
+  margin: 0 15vw 0 15vw;
+  padding: 0 10vw 0vw 10vw;
+}
+
+.paintbrush {
+  height: 4vh;
+  width: auto;
+  object-fit: contain;
 }
 
 .about_text {
   line-height: 170%;
   text-align: center;
-  padding: 2vw 0 2vw 0;
+  padding: 0;
 }
 
 .kristebasement {
+  padding-top: 4vh;
   height: 50vh;
   width: auto;
   object-fit: contain;
@@ -388,12 +396,20 @@
   }
 
   .about {
-    margin: 10px 15px 20px 15px;
-    padding: 8vw 10vw 8vw 10vw;
-    /* background-color: rgb(199, 211, 74); */
-    background-color: #e5d5b8;
+    margin: 6px 15px 20px 15px;
+    padding: 4vw 8vw 12vw 8vw;
+    /* background-color: #e5d5b8; */
     border-radius: 10px;
-    /* box-shadow: 0px 0px 20px #e5d5b8; */
+  }
+
+  .paintbrush {
+    height: 4.5vh;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .about_text {
+    padding: 0vw 0 0vw 0;
   }
 
   .kristebasement {
