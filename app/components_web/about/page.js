@@ -3,11 +3,13 @@ import Image from "next/image";
 import kristebasement from "../../../public/kristebasement.jpg";
 
 export default function About() {
-
   return (
     <div className="about">
-      <p className="about_p_one">Hi! My name is Kristė Aukštuolis.</p>
-
+      <div className="about_p_one_container">
+      <p className="about_p_one">Hi!&nbsp;</p>
+      <p className="about_p_one">My name is&nbsp;</p>
+      <p className="about_p_one">Kristė Aukštuolis</p>
+</div>
       <p className="about_p">
         I am a Lithuanian-American artist based out of Columbus, OH. As long as
         I can remember, I have been greatly influenced by my roots in the life
@@ -19,9 +21,13 @@ export default function About() {
         beauty in the little things, even among the chaos that life can bring.
       </p>
       <div className="kristebasement_container">
-        <Image src={kristebasement} className="kristebasement" alt="" priority/>
+        <Image
+          src={kristebasement}
+          className="kristebasement"
+          alt=""
+          priority
+        />
       </div>
     </div>
   );
-};
-
+}

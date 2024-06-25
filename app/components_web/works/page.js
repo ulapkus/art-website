@@ -24,7 +24,6 @@ export default function Works() {
 
   return (
     <div className="main">
-      
       <div className="works_art_container">
         <div className="art">
           <Image className="art_img" src={one} alt="" />
