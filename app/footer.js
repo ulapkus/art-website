@@ -1,22 +1,72 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "./page.module.css";
+import Image from "next/image";
+import instagramlogo from "../public/instagram.webp";
+import emaillogo from "../public/emaillogo.png";
 
 export default function Footer() {
+  const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0 });
+
+  const copyToClipboard = async (event) => {
+    try {
+      const email = "klapkus@gmail.com";
+      await navigator.clipboard.writeText(email);
+
+      const x = event.clientX;
+      const y = event.clientY;
+
+      setTooltip({ visible: true, x, y });
+
+      setTimeout(() => {
+        setTooltip({ visible: false, x: 0, y: 0 });
+      }, 2000);
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+    }
+  };
+
   return (
     <div className={styles.footer}>
-      <div className={styles.footer_main}>
-        <p className={styles.footer_words}>KLAPKUS@GMAIL.COM | </p>
-        <p className={`${styles.footer_words} ${styles.socials}`}>
-          <img
-            className={styles.insta_img}
-            src="https://static.vecteezy.com/system/resources/previews/017/743/717/original/instagram-icon-logo-free-png.png"
-            alt="Instagram"
-          ></img>
-          INSTAGRAM
-        </p>
-      </div>
+      <Image
+        onClick={copyToClipboard}
+        className={styles.logo_contact}
+        src={emaillogo}
+        alt=""
+        width={100}
+        height={100}
+      ></Image>
+      <a
+        href="https://www.instagram.com/art.by.kriste?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="_blank"
+      >
+        <Image
+          className={styles.logo_contact}
+          src={instagramlogo}
+          alt=""
+          width={100}
+          height={100}
+        ></Image>
+      </a>
+      {tooltip.visible && (
+        <div
+          className={styles.email_copied}
+          style={{
+            position: "fixed",
+            top: tooltip.y,
+            left: tooltip.x,
+            backgroundColor: "black",
+            color: "white",
+            padding: "5px",
+            borderRadius: "3px",
+            zIndex: 1000,
+            transform: "translate(-50%, -100%)",
+          }}
+        >
+          Email copied!
+        </div>
+      )}
     </div>
   );
 }
