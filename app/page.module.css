@@ -152,6 +152,15 @@
   margin: 5vh;
 }
 
+.email_container,
+.instagram_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+
 .logo_contact {
   object-fit: contain;
   height: 3vh;
@@ -162,6 +171,14 @@
 
 .logo_contact:hover {
   cursor: pointer;
+}
+
+.email_footer,
+.instagram_footer {
+  font-size: 1vw;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
 }
 
 .about {
