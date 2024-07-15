@@ -29,18 +29,17 @@ export default function Footer() {
 
   return (
     <div className={styles.footer}>
-      <div className={styles.email_container}>
-      <Image
-        onClick={copyToClipboard}
-        className={styles.logo_contact}
-        src={emaillogo}
-        alt=""
-        width={100}
-        height={100}
-      ></Image>
-      <p className={styles.email_footer}>klapkus@gmail.com</p>
+      <div className={styles.email_container} onClick={copyToClipboard}>
+        <Image
+          className={styles.logo_contact}
+          src={emaillogo}
+          alt=""
+          width={100}
+          height={100}
+        ></Image>
+        <p className={styles.email_footer}>klapkus@gmail.com</p>
       </div>
-      
+
       <a
         href="https://www.instagram.com/art.by.kriste?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
         target="_blank"
@@ -62,7 +61,12 @@ export default function Footer() {
             position: "fixed",
             top: tooltip.y,
             left: tooltip.x,
-            ...tooltipStyle,
+            backgroundColor: "black",
+            color: "white",
+            padding: "5px",
+            borderRadius: "3px",
+            zIndex: 1000,
+            transform: "translate(-50%, -100%)",
           }}
         >
           Email copied!

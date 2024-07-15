@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import kristebasement from "../../public/kristebasement.jpg";
+import kristebasement from "../../public/kristebasement.webp";
 import paintbrush from "../../public/paintbrush.png";
 import styles from "../page.module.css";
 import Footer from "../footer";

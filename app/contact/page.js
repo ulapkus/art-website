@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import kristeportrait from "../../public/kristepic.jpg";
+import kristeportrait from "../../public/kristepic.webp";
 import gmaillogo from "../../public/emaillogo.png";
 import styles from "../page.module.css";
 import instagramlogo from "../../public/instagram.webp";

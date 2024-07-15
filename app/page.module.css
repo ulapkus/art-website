@@ -148,7 +148,6 @@
   justify-content: center;
   align-items: flex-start;
   gap: 3vw;
-  height: 3vh;
   margin: 5vh;
 }
 
@@ -229,6 +228,10 @@
   display: inline-block;
   object-fit: cover;
   height: 46vh;
+}
+
+.art_img {
+  object-fit: cover;
 }
 
 .art::after {
@@ -322,6 +325,7 @@
   color: black;
 }
 
+.email_container:hover,
 .gmail_contact:hover {
   cursor: pointer;
 }
