@@ -20,44 +20,422 @@ import fourteen from "../../public/fourteen.webp";
 import fifteen from "../../public/fifteen.webp";
 import sixteen from "../../public/sixteen.webp";
 import Footer from "../footer";
-
-const artData = [
-  { src: one, size: "12 x 16", medium: "Pastel" },
-  { src: twelve, size: "12 x 20", medium: "Pastel" },
-  { src: three, size: "9 x 12", medium: "Oil on canvas" },
-  { src: four, size: "9 x 12", medium: "Pastel" },
-  { src: five, size: "20 x 30", medium: "Pastel" },
-  { src: ten, size: "12 x 16", medium: "Pastel" },
-  { src: eight, size: "12 x 16", medium: "Pastel" },
-  { src: nine, size: "12 x 16", medium: "Pastel" },
-  { src: two, size: "15 x 20", medium: "Pastel" },
-  { src: eleven, size: "9 x 12  ", medium: "Pastel" },
-  { src: thirteen, size: "8 x 10", medium: "Pastel" },
-  { src: six, size: "8 x 10", medium: "Pastel" },
-  { src: seven, size: "10 x 18", medium: "Pastel" },
-  { src: fifteen, size: "19 x 25", medium: "Pastel" },
-  { src: sixteen, size: "15 x 20", medium: "Pastel" },
-  { src: fourteen, size: "10 x 15", medium: "Pastel" },
-];
-
-const ArtItem = ({ src, size, medium }) => (
-  <div className={styles.art}>
-    <Image className={styles.art_img} src={src} alt="" />
-    <div className={styles.text_container}>
-      <div className={styles.text}>{size}</div>
-      <div className={styles.text}>{medium}</div>
-    </div>
-  </div>
-);
+import oneNew from "../../public/onenew.jpg";
+import twoNew from "../../public/twonew.jpg";
+import threeNew from "../../public/threenewish.jpg";
 
 export default function Works() {
   return (
     <div className={styles.main}>
       <div className={styles.works_art_container}>
-        {artData.map((art, index) => (
-          <ArtItem key={index} {...art} />
-        ))}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "33%",
+            marginTop: "10%",
+          }}
+        >
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <div
+              style={{
+                height: "40vh",
+                backgroundColor: "#C76A67",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "46.4%",
+                  left: "18%",
+                  transform: "translate(-50%, -50%)",
+                  width: "15%",
+                  zIndex: 2,
+                }}
+              >
+                <Image className={styles.art_img} src={two} alt="" />
+              </div>
+            </div>
+
+            <div style={{ color: "#F43C34", paddingTop: "1vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <div
+              style={{
+                position: "absolute",
+                top: "98.5%",
+                left: "17.8%",
+                transform: "translate(-50%, -50%)",
+                width: "38vh",
+                height: "38vh",
+                zIndex: 2,
+              }}
+            >
+              <Image className={styles.art_img} src={one} alt="" />
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "41.5vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <Image
+              src={threeNew}
+              style={{ width: "38vh", height: "38vh", zIndex: 1 }}
+              alt=""
+            />
+            <div
+              style={{
+                position: "absolute",
+                top: "152.5%",
+                left: "18%",
+                transform: "translate(-50%, -50%)",
+                width: "15%",
+                zIndex: 2,
+              }}
+            >
+              <Image className={styles.art_img} src={five} alt="" />
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "1vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "33%",
+            marginTop: "20%",
+          }}
+        >
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <div
+              style={{
+                height: "40vh",
+                backgroundColor: "#db7139",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "54.75%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  width: "15%",
+                  zIndex: 2,
+                }}
+              >
+                <Image className={styles.art_img} src={eight} alt="" />
+              </div>
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "1vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <div
+              style={{
+                position: "absolute",
+                top: "107.3%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "38vh",
+                height: "38vh",
+                zIndex: 2,
+              }}
+            >
+              <Image className={styles.art_img} src={eleven} alt="" />
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "42.5vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <Image
+              src={oneNew}
+              style={{ width: "38vh", height: "38vh", zIndex: 1 }}
+              alt=""
+            />
+            <div
+              style={{
+                position: "absolute",
+                top: "159.5%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "15%",
+                zIndex: 2,
+              }}
+            >
+              <Image className={styles.art_img} src={nine} alt="" />
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "1vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "33%",
+            marginTop: "1%",
+          }}
+        >
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <div
+              style={{
+                height: "40vh",
+                backgroundColor: "#B48598",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "39%",
+                  right: "3%",
+                  transform: "translate(-50%, -50%)",
+                  width: "15%",
+                  zIndex: 2,
+                }}
+              >
+                <Image className={styles.art_img} src={five} alt="" />
+              </div>
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "1vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+
+          <div style={{ height: "53vh", width: "38vh" }}>
+       
+            <div
+              style={{
+                position: "absolute",
+                top: "92%",
+                right: "-4%",
+                transform: "translate(-50%, -50%)",
+                width: "38vh",
+                height: "38vh",
+                zIndex: 2,
+              }}
+            >
+              <Image className={styles.art_img} src={two} alt="" />
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "43vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+
+          <div style={{ height: "53vh", width: "38vh" }}>
+            <Image
+              src={oneNew}
+              style={{ width: "38vh", height: "38vh", zIndex: 1 }}
+              alt=""
+            />
+            <div
+              style={{
+                position: "absolute",
+                top: "144.1%",
+                right: "3%",
+                transform: "translate(-50%, -50%)",
+                width: "15%",
+                zIndex: 2,
+              }}
+            >
+              <Image className={styles.art_img} src={one} alt="" />
+            </div>
+            <div style={{ color: "#F43C34", paddingTop: "1vh" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.75vh",
+                    fontStyle: "italic",
+                    fontWeight: "500",
+                  }}
+                >
+                  THE MIND INSIDE
+                </div>
+                <div>2021</div>
+              </div>
+              <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+              <div>30" X 20"</div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <Footer />
     </div>
   );
