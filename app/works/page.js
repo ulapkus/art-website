@@ -19,6 +19,7 @@ import ukrainianwoman from "../../public/ukranian.jpg";
 export default function Works() {
   return (
     <div>
+      
       <div className="main">
         <Navbar />
         <div className="works_art_container_one">
