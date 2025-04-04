@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import styles from "./page.module.css";
 // import kristetwo from "../public/WhatsAppThree.jpeg";
 import kristetwo from "../public/WhatsAppFour.jpeg";
 import Navbar from "./navbar";
@@ -27,7 +26,7 @@ export default function Page() {
       </div>
       <div>
         <Navbar />
-        <div className={styles.art_container_container}>
+        <div className="art_container_container">
           <div
             style={{
               position: "fixed",

@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import instagramlogo from "../public/instagram.webp";
 import emaillogo from "../public/emaillogo.png";
+import etsylogo from "../public/etsy.png";
 
 export default function Footer() {
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0 });
@@ -28,35 +29,51 @@ export default function Footer() {
   };
 
   return (
-    <div className={styles.footer}>
-      <div className={styles.email_container} onClick={copyToClipboard}>
+    <div className="footer">
+      <div className="email_container" onClick={copyToClipboard}>
         <Image
-          className={styles.logo_contact}
+          className="logo_contact"
           src={emaillogo}
           alt=""
           width={100}
           height={100}
         ></Image>
-        <p className={styles.email_footer}>klapkus@gmail.com</p>
+        <p className="email_footer">klapkus@gmail.com</p>
       </div>
 
       <a
         href="https://www.instagram.com/art.by.kriste?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
         target="_blank"
-        className={styles.instagram_container}
+        className="instagram_container"
       >
         <Image
-          className={styles.logo_contact}
+          className="logo_contact"
           src={instagramlogo}
           alt=""
           width={100}
           height={100}
-        ></Image>
-        <p className={styles.instagram_footer}>@art.by.kriste</p>
+        />
+        <p className="instagram_footer">@art.by.kriste</p>
       </a>
+      {/* <a
+        // need to change
+        href="https://www.instagram.com/art.by.kriste?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="_blank"
+        className="instagram_container"
+      >
+        <Image
+          className="logo_contact"
+          src={etsylogo}
+          alt=""
+          width={100}
+          height={100}
+        />
+        <p className="instagram_footer">Etsy Shop</p>
+      </a> */}
+
       {tooltip.visible && (
         <div
-          className={styles.email_copied}
+          className="email_copied"
           style={{
             position: "fixed",
             top: tooltip.y,
