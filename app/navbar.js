@@ -41,7 +41,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="nav_maincontainer">
+    <div>
       <div className="nav_background" style={navStyle}>
         <div className="nav_links_container_one" style={linkStyleContainerOne}>
           <Link href="/" className="nav_link" style={linkStyle}>

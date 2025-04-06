@@ -344,7 +344,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  /* z-index: 3; */
+  z-index: 3;
   font-size: 8vh;
   height: 100%;
   padding-bottom: 20vh;
