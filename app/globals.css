@@ -14,6 +14,14 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 0;
+  margin: 0;
+}
+
 .art_container_two {
   display: flex;
   flex-direction: column;
@@ -549,4 +557,167 @@ img {
   gap: 3vw;
   margin: 15vh 5vw 5vh 8vw;
   height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .art_container_two {
+    flex-direction: column;
+  }
+
+  .navbar_line_side_container {
+    display: none;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5vw 0 5vw;
+    padding: 10vh 10vw 0 10vw;
+    justify-content: space-between;
+  }
+
+  .kristebasement {
+    height: 50vh;
+    width: auto;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .main {
+    padding: 0 3vw 0 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    margin-top: 18vh;
+  }
+
+  .works_art_container_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 0 0 5vw;
+  }
+
+  .works_art_container_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 0 0 5vw;
+  }
+
+  .works_art_container_three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 0 0 5vw;
+  }
+
+  .art_text_container {
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #f43c34;
+    padding-top: 1vh;
+  }
+
+  .art_background {
+    width: 80vw;
+    height: 80vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .art_piece {
+    object-fit: contain;
+    width: 55vw;
+    height: 70vw;
+    z-index: 2;
+  }
+
+  .nav_background {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    font-size: 8vh;
+    margin-top: 3.5vh;
+    z-index: 5000;
+  }
+
+  .nav_links_container_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav_links_container_two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    width: 100%;
+  }
+
+  .home_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13vh;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .art_container_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+  }
+
+  .home_aukstuolis_name_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    font-size: 8vh;
+    height: 100%;
+  }
+
+  .home_image_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

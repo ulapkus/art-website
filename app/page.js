@@ -23,14 +23,14 @@ export default function Page() {
     <div className="home_container">
       <Navbar />
       <div className="home_kriste_name_container_container">
-        <div className="home_kriste_name_container">
+        {/* <div className="home_kriste_name_container">
           <div className="home_kriste_name">KRISTĖ</div>
-        </div>
+        </div> */}
       </div>
       <div className="art_container_container">
-        <div className="home_aukstuolis_name_container">
+        {/* <div className="home_aukstuolis_name_container">
           <div className="home_aukstuolis_name">AUKŠTUOLIS</div>
-        </div>
+        </div> */}
         <div className="home_image_container">
           <Image priority src={kristetwo} />
         </div>
