@@ -35,8 +35,9 @@ export default function Navbar() {
 
   const navStyle = {
     display: "flex",
-    justifyContent:
-      width <= 480 ? "space-around" : isHome ? "flex-start" : "space-around",
+    // justifyContent:
+    //   width <= 480 ? "space-around" : isHome ? "flex-start" : "space-around",
+    justifyContent: isHome ? "flex-start" : "space-around",
     width: isHome ? "100%" : "100%",
   };
 
@@ -47,18 +48,21 @@ export default function Navbar() {
   };
 
   const linkStyleTwo = {
-    color: width <= 480 ? "#F5431C" : isHome ? "white" : "#F5431C",
+    // color: width <= 480 ? "#F5431C" : isHome ? "white" : "#F5431C",
+    color: isHome ? "white" : "#F5431C",
     fontWeight: isHome ? "400" : "400",
     marginRight: isHome ? "0" : "1.5vw",
     marginLeft: isHome ? "0" : "1.5vw",
   };
 
   const linkStyleContainerOne = {
-    width: width <= 480 ? "100%" : isHome ? "35%" : "100%",
+    // width: width <= 480 ? "100%" : isHome ? "35%" : "100%",
+    width: isHome ? "35%" : "100%",
   };
 
   const linkStyleContainerTwo = {
-    width: width <= 480 ? "100%" : isHome ? "65%" : "100%",
+    // width: width <= 480 ? "100%" : isHome ? "65%" : "100%",
+    width: isHome ? "65%" : "100%",
   };
 
   const linkStyleContainerThree = {
