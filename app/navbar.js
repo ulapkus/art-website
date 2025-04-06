@@ -7,77 +7,71 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isAbout = pathname === "/about";
 
   const navStyle = {
     display: "flex",
     justifyContent: isHome ? "flex-start" : "space-around",
-    width: isHome ? "100%" : "45%",
+    width: isHome ? "100%" : "100%",
   };
 
   const linkStyle = {
     color: isHome ? "#F5431C" : "#F5431C",
+    marginRight: isHome ? "0" : "1.5vw",
+    marginLeft: isHome ? "0" : "1.5vw",
   };
 
   const linkStyleTwo = {
     color: isHome ? "white" : "#F5431C",
     fontWeight: isHome ? "400" : "400",
+    marginRight: isHome ? "0" : "1.5vw",
+    marginLeft: isHome ? "0" : "1.5vw",
+  };
+
+  const linkStyleContainerOne = {
+    width: isHome ? "35%" : "100%",
+  };
+
+  const linkStyleContainerTwo = {
+    width: isHome ? "65%" : "100%",
+  };
+
+  const linkStyleContainerThree = {
+    height: isAbout ? "111vh" : "240vh",
   };
 
   return (
     <div className="nav_maincontainer">
       <div className="nav_background" style={navStyle}>
-        <Link href="/" className="nav_link" style={linkStyle}>
-          HOME
-        </Link>
-        <Link href="/about" className="nav_link" style={linkStyle}>
-          ABOUT
-        </Link>
-        <Link href="/works" className="nav_link_two" style={linkStyleTwo}>
-          WORKS
-        </Link>
-        <Link href="/shop" className="nav_link_two" style={linkStyleTwo}>
-          SHOP
-        </Link>
-      </div>
-      <div
-        style={{
-          borderBottom: "1px solid black",
-          position: "absolute",
-          width: "87%",
-          zIndex: 1000,
-          fontSize: "8vh",
-          top: "100px",
-          left: "105px",
-        }}
-      ></div>
-      <div
-        style={{
-          position: "absolute",
-          left: "0",
-          top: "0",
-          width: "30%",
-          boxSizing: "border-box",
-        }}
-      >
-        <div
-          style={{
-            writingMode: "vertical-lr",
-            transform: "rotate(180deg)",
-            height: "200vh",
-            width: "20.5%",
-            color: "#F5431C",
-            display: "flex",
-            alignItems: "flex-end",
-            justifyContent: "flex-end",
-            paddingRight: "7vh",
-            paddingBottom: "12vh",
-            borderLeft: "1px solid black",
-            fontSize: "2vh",
-            fontWeight: "400",
-          }}
-        >
-          COLUMBUS, OHIO
+        <div className="nav_links_container_one" style={linkStyleContainerOne}>
+          <Link href="/" className="nav_link" style={linkStyle}>
+            HOME
+          </Link>
+          <Link href="/about" className="nav_link" style={linkStyle}>
+            ABOUT
+          </Link>
         </div>
+        <div className="nav_links_container_two" style={linkStyleContainerTwo}>
+          <Link href="/works" className="nav_link_two" style={linkStyleTwo}>
+            WORKS
+          </Link>
+          <a
+            href="https://artbykriste.etsy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav_link_two"
+            style={{ ...linkStyleTwo, textDecoration: "none" }}
+          >
+            SHOP
+          </a>
+        </div>
+      </div>
+      <div className="navbar_line_top"></div>
+      <div
+        className="navbar_line_side_container"
+        style={linkStyleContainerThree}
+      >
+        <div className="navbar_line_side">COLUMBUS, OHIO</div>
       </div>
     </div>
   );

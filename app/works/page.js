@@ -18,15 +18,20 @@ import ukrainianwoman from "../../public/ukranian.jpg";
 
 export default function Works() {
   return (
-    <div>
-      
+    <div className="works_container">
+      <Navbar />
       <div className="main">
-        <Navbar />
         <div className="works_art_container_one">
           <div className="art_container_two">
             <div className="art_background one">
               <div className="art_piece">
-                <Image className="art_img" src={gandrai} alt="" />
+                <Image
+                  className="art_img"
+                  src={gandrai}
+                  alt=""
+                  priority
+                  width={1000}
+                />
               </div>
             </div>
 
@@ -45,7 +50,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background two">
               <div className="art_piece">
-                <Image className="art_img" src={oldman} alt="" />
+                <Image className="art_img" src={oldman} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -61,7 +66,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background three">
               <div className="art_piece">
-                <Image className="art_img" src={imatter} alt="" />
+                <Image className="art_img" src={imatter} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -77,7 +82,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background four">
               <div className="art_piece">
-                <Image className="art_img" src={pistacio} alt="" />
+                <Image className="art_img" src={pistacio} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -95,7 +100,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background five">
               <div className="art_piece">
-                <Image className="art_img" src={barsciai} alt="" />
+                <Image className="art_img" src={barsciai} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -111,7 +116,12 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background six">
               <div className="art_piece">
-                <Image className="art_img" src={ukrainianwoman} alt="" />
+                <Image
+                  className="art_img"
+                  src={ukrainianwoman}
+                  alt=""
+                  priority
+                />
               </div>
             </div>
             <div className="art_text_container">
@@ -127,7 +137,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background seven">
               <div className="art_piece">
-                <Image className="art_img" src={woman} alt="" />
+                <Image className="art_img" src={woman} alt="" priority />
               </div>
             </div>
 
@@ -145,7 +155,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background eleven">
               <div className="art_piece">
-                <Image className="art_img" src={porcelin} alt="" />
+                <Image className="art_img" src={porcelin} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -161,7 +171,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background ten">
               <div className="art_piece">
-                <Image className="art_img" src={selfportrait} alt="" />
+                <Image className="art_img" src={selfportrait} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -177,7 +187,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background nine">
               <div className="art_piece">
-                <Image className="art_img" src={vytas} alt="" />
+                <Image className="art_img" src={vytas} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">
@@ -193,7 +203,7 @@ export default function Works() {
           <div className="art_container_two">
             <div className="art_background eight">
               <div className="art_piece">
-                <Image className="art_img" src={avocado} alt="" />
+                <Image className="art_img" src={avocado} alt="" priority />
               </div>
             </div>
             <div className="art_text_container">

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "./page.module.css";
 import Image from "next/image";
 import instagramlogo from "../public/instagram.webp";
 import emaillogo from "../public/emaillogo.png";
@@ -55,9 +54,8 @@ export default function Footer() {
         />
         <p className="instagram_footer">@art.by.kriste</p>
       </a>
-      {/* <a
-        // need to change
-        href="https://www.instagram.com/art.by.kriste?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+      <a
+        href="https://artbykriste.etsy.com"
         target="_blank"
         className="instagram_container"
       >
@@ -69,7 +67,7 @@ export default function Footer() {
           height={100}
         />
         <p className="instagram_footer">Etsy Shop</p>
-      </a> */}
+      </a>
 
       {tooltip.visible && (
         <div
@@ -78,12 +76,6 @@ export default function Footer() {
             position: "fixed",
             top: tooltip.y,
             left: tooltip.x,
-            backgroundColor: "black",
-            color: "white",
-            padding: "5px",
-            borderRadius: "3px",
-            zIndex: 1000,
-            transform: "translate(-50%, -100%)",
           }}
         >
           Email copied!

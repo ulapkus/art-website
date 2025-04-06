@@ -1,17 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import kristebasement from "../../public/kristebasement.webp";
-import paintbrush from "../../public/paintbrush.png";
-import styles from "../page.module.css";
 import Footer from "../footer";
 import Navbar from "../navbar";
-import kristetwo from "../../public/WhatsAppThree.jpeg";
+import kristelogo from "../../public/kristelogo.png";
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about_container">
       <Navbar />
-      <div className="art_container_container_two">
+      <div className="about">
         <h1 className="about-me">About Me</h1>
         <p className="about_text">
           I am a Lithuanian-American artist based out of Columbus, OH. For as
@@ -20,7 +18,7 @@ export default function About() {
           members found peace through artwork-and I still use their artistic
           materials to this day.
         </p>
-        <Image src={paintbrush} className="paintbrush" alt="" priority />
+        {/* <Image src={paintbrush} className="paintbrush" alt="" priority /> */}
 
         <p className="about_text">
           The play between light and darkness is prevalent throughout my work,
@@ -28,14 +26,15 @@ export default function About() {
           periods in their life. My art is an ode to people before me who found
           beauty in the little things, even among the chaos that life can bring.
         </p>
+        <Image className="kristelogo" src={kristelogo} alt="" priority />
         <Image
           src={kristebasement}
           className="kristebasement"
           alt=""
           priority
         />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
