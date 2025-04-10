@@ -49,8 +49,13 @@ export default function Works() {
 
           <div className="art_container_two">
             <div className="art_background two">
-              <div className="art_piece">
-                <Image className="art_img" src={oldman} alt="" priority />
+              <div className="art_piece_horizontal">
+                <Image
+                  className="art_img_horizontal"
+                  src={oldman}
+                  alt=""
+                  priority
+                />
               </div>
             </div>
             <div className="art_text_container">
@@ -81,8 +86,13 @@ export default function Works() {
 
           <div className="art_container_two">
             <div className="art_background four">
-              <div className="art_piece">
-                <Image className="art_img" src={pistacio} alt="" priority />
+              <div className="art_piece_horizontal">
+                <Image
+                  className="art_img_horizontal"
+                  src={pistacio}
+                  alt=""
+                  priority
+                />
               </div>
             </div>
             <div className="art_text_container">
@@ -185,6 +195,27 @@ export default function Works() {
           </div>
 
           <div className="art_container_two">
+            <div className="art_background eight">
+              <div className="art_piece_horizontal">
+                <Image
+                  className="art_img_horizontal"
+                  src={avocado}
+                  alt=""
+                  priority
+                />
+              </div>
+            </div>
+            <div className="art_text_container">
+              <div className="art_text_styling_one">
+                <div className="art_text">IT'S AN AVOCADO</div>
+                <div style={{ fontSize: "1.5vh" }}>OIL ON LINEN</div>
+                <div>9.5" X 12.5"</div>
+              </div>
+              <div className="art_text_styling_two">2024</div>
+            </div>
+          </div>
+
+          <div className="art_container_two">
             <div className="art_background nine">
               <div className="art_piece">
                 <Image className="art_img" src={vytas} alt="" priority />
@@ -197,22 +228,6 @@ export default function Works() {
                 <div>19" X 25"</div>
               </div>
               <div className="art_text_styling_two">2023</div>
-            </div>
-          </div>
-
-          <div className="art_container_two">
-            <div className="art_background eight">
-              <div className="art_piece">
-                <Image className="art_img" src={avocado} alt="" priority />
-              </div>
-            </div>
-            <div className="art_text_container">
-              <div className="art_text_styling_one">
-                <div className="art_text">IT'S AN AVOCADO</div>
-                <div style={{ fontSize: "1.5vh" }}>OIL ON LINEN</div>
-                <div>9.5" X 12.5"</div>
-              </div>
-              <div className="art_text_styling_two">2024</div>
             </div>
           </div>
         </div>
