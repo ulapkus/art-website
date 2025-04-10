@@ -639,9 +639,9 @@ img {
   }
 
   .kristebasement {
-    height: 50vh;
-    width: auto;
-    object-fit: contain;
+    height: 80vw;
+    width: 80vw;
+    object-fit: cover;
     border-radius: 5px;
   }
 
