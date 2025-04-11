@@ -777,10 +777,6 @@ img {
     height: 100%;
   }
 
-  .home_image_container {
-    margin-top: 10vh;
-  }
-
   .art_piece_horizontal {
     object-fit: contain;
     width: 70vw;
@@ -882,6 +878,7 @@ img {
     padding: 0 5vw 0 5vw;
     object-fit: cover;
     position: static;
+    margin-top: 10vh;
   }
 
   .home_kriste_name_container {

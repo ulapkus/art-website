@@ -11,7 +11,7 @@ export default function Footer() {
 
   const copyToClipboard = async (event) => {
     try {
-      const email = "klapkus@gmail.com";
+      const email = "kriste@artbykriste.com";
       await navigator.clipboard.writeText(email);
 
       const x = event.clientX;
@@ -37,7 +37,7 @@ export default function Footer() {
           width={100}
           height={100}
         ></Image>
-        <p className="email_footer">klapkus@gmail.com</p>
+        <p className="email_footer">kriste@artbykriste.com</p>
       </div>
 
       <a

@@ -140,7 +140,7 @@ export default function Works() {
                 <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
                 <div>12" X 16"</div>
               </div>
-              <div className="art_text_styling_two">2020</div>
+              <div className="art_text_styling_two">2023</div>
             </div>
           </div>
 
