@@ -166,6 +166,10 @@ html {
   background-color: #a58793;
 }
 
+.twelve {
+  background-color: #6099c3;
+}
+
 .art_piece {
   object-fit: contain;
   width: 16vw;

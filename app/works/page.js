@@ -15,6 +15,7 @@ import barsciai from "../../public/barsciai.jpg";
 import Navbar from "../navbar";
 import imatter from "../../public/imatter.jpg";
 import ukrainianwoman from "../../public/ukranian.jpg";
+import wheat from "../../public/wheat.jpg";
 
 export default function Works() {
   return (
@@ -160,8 +161,7 @@ export default function Works() {
               <div className="art_text_styling_two">2024</div>
             </div>
           </div>
-        </div>
-        <div className="works_art_container_three">
+
           <div className="art_container_two">
             <div className="art_background eleven">
               <div className="art_piece">
@@ -175,6 +175,25 @@ export default function Works() {
                 <div>12" X 16"</div>
               </div>
               <div className="art_text_styling_two">2022</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="works_art_container_three">
+          <div className="art_container_two">
+            <div className="art_background twelve">
+              <div className="art_piece">
+                <Image className="art_img" src={wheat} alt="" priority />
+              </div>
+            </div>
+
+            <div className="art_text_container">
+              <div className="art_text_styling_one">
+                <div className="art_text">GYVYBĖS SAULĖ / SUN OF LIFE</div>
+                <div style={{ fontSize: "1.5vh" }}>OIL ON CANVAS</div>
+                <div>30" X 40"</div>
+              </div>
+              <div className="art_text_styling_two">2025</div>
             </div>
           </div>
 
