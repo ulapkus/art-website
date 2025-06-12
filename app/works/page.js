@@ -16,6 +16,8 @@ import Navbar from "../navbar";
 import imatter from "../../public/imatter.jpg";
 import ukrainianwoman from "../../public/ukranian.jpg";
 import wheat from "../../public/wheat.jpg";
+import rasa from "../../public/rasa.jpg";
+import lordknows from "../../public/lordknows.jpg";
 
 export default function Works() {
   return (
@@ -47,7 +49,6 @@ export default function Works() {
               <div className="art_text_styling_two">2025</div>
             </div>
           </div>
-
           <div className="art_container_two">
             <div className="art_background two">
               <div className="art_piece_horizontal">
@@ -64,6 +65,27 @@ export default function Works() {
                 <div className="art_text">UNITED STATE OF RELAXATION</div>
                 <div style={{ fontSize: "1.5vh" }}>OIL ON CANVAS</div>
                 <div>10.5" X 12.5"</div>
+              </div>
+              <div className="art_text_styling_two">2025</div>
+            </div>
+          </div>
+
+          <div className="art_container_two">
+            <div className="art_background thirteen">
+              <div className="art_piece_horizontal">
+                <Image
+                  className="art_img_horizontal"
+                  src={lordknows}
+                  alt=""
+                  priority
+                />
+              </div>
+            </div>
+            <div className="art_text_container">
+              <div className="art_text_styling_one">
+                <div className="art_text">RASA</div>
+                <div style={{ fontSize: "1.5vh" }}>OIL ON CANVAS</div>
+                <div>40" X 30"</div>
               </div>
               <div className="art_text_styling_two">2025</div>
             </div>
@@ -163,18 +185,23 @@ export default function Works() {
           </div>
 
           <div className="art_container_two">
-            <div className="art_background eleven">
-              <div className="art_piece">
-                <Image className="art_img" src={porcelin} alt="" priority />
+            <div className="art_background fourteen">
+              <div className="art_piece_horizontal">
+                <Image
+                  className="art_img_horizontal"
+                  src={rasa}
+                  alt=""
+                  priority
+                />
               </div>
             </div>
             <div className="art_text_container">
               <div className="art_text_styling_one">
-                <div className="art_text">PORCELAIN</div>
-                <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
-                <div>12" X 16"</div>
+                <div className="art_text">LORD KNOWS I'VE TRIED</div>
+                <div style={{ fontSize: "1.5vh" }}>OIL ON LINEN</div>
+                <div>36" X 24"</div>
               </div>
-              <div className="art_text_styling_two">2022</div>
+              <div className="art_text_styling_two">2025</div>
             </div>
           </div>
         </div>
@@ -191,7 +218,7 @@ export default function Works() {
               <div className="art_text_styling_one">
                 <div className="art_text">GYVYBĖS SAULĖ / SUN OF LIFE</div>
                 <div style={{ fontSize: "1.5vh" }}>OIL ON CANVAS</div>
-                <div>30" X 40"</div>
+                <div>40" X 30"</div>
               </div>
               <div className="art_text_styling_two">2025</div>
             </div>
@@ -208,6 +235,22 @@ export default function Works() {
                 <div className="art_text">SELF PORTRAIT</div>
                 <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
                 <div>10" X 12"</div>
+              </div>
+              <div className="art_text_styling_two">2022</div>
+            </div>
+          </div>
+
+          <div className="art_container_two">
+            <div className="art_background eleven">
+              <div className="art_piece">
+                <Image className="art_img" src={porcelin} alt="" priority />
+              </div>
+            </div>
+            <div className="art_text_container">
+              <div className="art_text_styling_one">
+                <div className="art_text">PORCELAIN</div>
+                <div style={{ fontSize: "1.5vh" }}>PASTEL ON PAPER</div>
+                <div>12" X 16"</div>
               </div>
               <div className="art_text_styling_two">2022</div>
             </div>
