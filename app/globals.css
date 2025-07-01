@@ -12,7 +12,6 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  /* position: fixed; */
 }
 
 html {
@@ -31,10 +30,30 @@ html {
   height: 100%;
 }
 
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-close-button:hover {
+  color: white;
+}
+
 .art_text {
   font-size: 1.75vh;
   font-style: italic;
   font-weight: 500;
+}
+
+.art-details {
+  font-size: 1.5vh;
 }
 
 .art_text_container {
@@ -60,6 +79,7 @@ html {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
+  font-size: 1.5vh;
 }
 
 .art_background {
@@ -175,7 +195,7 @@ html {
 }
 
 .fourteen {
-  background-color: #dd6b4b;
+  background-color: #6091a7;
 }
 
 .art_piece {
@@ -642,7 +662,26 @@ img {
   font-weight: 400;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+  .home-image {
+    object-fit: cover;
+    padding: 0 5vw 0 5vw;
+  }
+
+  .art_text {
+    font-size: 2vh;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .art-details {
+    font-size: 1.9vh;
+  }
+
+  .art_text_styling_two {
+    font-size: 1.9vh;
+  }
+
   .art_container_two {
     flex-direction: column;
   }
@@ -886,9 +925,324 @@ img {
 
   .home_image_container {
     width: 100%;
+    height: 50%;
+    padding: 0 5vw 0 5vw;
+    position: static;
+    margin-top: 5vh;
+  }
+
+  .home_kriste_name_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 10%;
+    border: 1px solid green;
+  }
+
+  .home_kriste_name {
+    margin-right: 1.5vw;
+    color: black;
+    font-size: 10vw;
+  }
+
+  .email_footer,
+  .instagram_footer {
+    font-size: 3vw;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+  }
+
+  .instagram_footer {
+    display: none !important;
+  }
+
+  .email_footer {
+    display: none !important;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 10vw;
+    align-items: flex-end;
+    margin: 4vh 17vw 0vh 17vw;
+    width: 70%;
+    flex: 1;
+  }
+
+  .logo_contact {
+    object-fit: contain;
+    height: 3vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .art_container_two {
+    flex-direction: column;
+  }
+
+  .navbar_line_side_container {
+    display: none;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5vw 0 5vw;
+    padding: 2vh 10vw 0 10vw;
+    justify-content: space-between;
+  }
+
+  .kristebasement {
+    height: 80vw;
+    width: 80vw;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .main {
+    padding: 0 3vw 0 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    margin: 10vh 0 0vh 0;
+  }
+
+  .works_art_container_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .works_art_container_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .works_art_container_three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .art_text {
+    font-size: 1.75vh;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .art-details {
+    font-size: 1.5vh;
+  }
+
+  .art_text_styling_two {
+    font-size: 1.5vh;
+  }
+
+  .art_text_container {
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #f43c34;
+    padding-top: 1vh;
+  }
+
+  .art_background {
+    width: 80vw;
+    height: 80vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .art_piece {
+    object-fit: contain;
+    width: 55vw;
+    height: 70vw;
+    z-index: 2;
+  }
+
+  .nav_background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3.5vh;
+    gap: 0;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    color: #f5431c;
+    padding: 2vh;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
+  }
+
+  .home_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13vh;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .art_container_container {
+    margin-top: 5vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: static;
+  }
+
+  .home_aukstuolis_name_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    font-size: 8vh;
+    height: 100%;
+  }
+
+  .art_piece_horizontal {
+    object-fit: contain;
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .art_img_horizontal {
+    object-fit: contain;
+  }
+
+  .navbar_line_top {
+    border-bottom: 1px solid black;
+    position: absolute;
+    width: 80vw;
+    z-index: 1000;
+    top: 11vh;
+    left: 0;
+    margin: 0 10vw 0 10vw;
+  }
+
+  .navbar_line_side_container_home {
+    display: none !important;
+  }
+
+  .nav_background_home {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    font-size: 8vh;
+    margin-top: 3.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5000;
+  }
+
+  .nav_links_container_one_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav_links_container_two_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1001;
+    width: 100%;
+  }
+
+  .navbar_line_top_home {
+    border-bottom: 1px solid black;
+    position: absolute;
+    width: 80vw;
+    z-index: 1000;
+    top: 11vh;
+    left: 0;
+    margin: 0 10vw 0 10vw;
+  }
+
+  .home_columbus_text {
+    font-size: 2vh;
+    font-weight: 400;
+    color: #f5431c;
+    margin: 2vh 10vw 0vh 10vw;
+    font-style: italic;
+    letter-spacing: 0.2vw;
+  }
+
+  .navbar_line_top_home_two {
+    border-bottom: 1px solid black;
+    width: 80vw;
+    z-index: 1000;
+
+    margin: 5vh 10vw 0 10vw;
+  }
+
+  .nav_link_two_home {
+    text-decoration: none;
+    color: #f5431c;
+    padding: 2vh;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+    z-index: 5000;
+    margin-right: 0;
+    margin-left: 0;
+    text-decoration: none;
+  }
+
+  .home_image_container {
+    width: 100%;
     height: 40%;
     padding: 0 5vw 0 5vw;
-    object-fit: cover;
     position: static;
     margin-top: 10vh;
   }

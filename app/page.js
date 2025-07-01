@@ -32,14 +32,14 @@ export default function Page() {
   const { width } = useWindowSize();
 
   useEffect(() => {
-    if (pathname === "/") {
+    if (width >= 1024 && pathname === "/") {
       document.body.style.overflowY = "hidden";
 
       return () => {
         document.body.style.overflowY = "auto";
       };
     }
-  }, [pathname]);
+  }, [pathname, width]);
 
   if (typeof width === "undefined") {
     return null;
@@ -47,7 +47,7 @@ export default function Page() {
 
   return (
     <div>
-      {width <= 480 ? (
+      {width <= 1024 ? (
         // Mobile layout
         <div className="home_container">
           <Navbarhome />
@@ -57,7 +57,7 @@ export default function Page() {
             <div className="navbar_line_top_home_two"></div>
             <div className="home_columbus_text">ARTIST IN COLUMBUS, OHIO</div>
             <div className="home_image_container">
-              <Image priority src={kristetwo} alt="" />
+              <Image priority src={kristetwo} alt="" className="home-image" />
             </div>
             <Footer />
           </div>
