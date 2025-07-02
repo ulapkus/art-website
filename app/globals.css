@@ -198,6 +198,10 @@ html {
   background-color: #6091a7;
 }
 
+.fifteen {
+  background-color: #929c65;
+}
+
 .art_piece {
   object-fit: contain;
   width: 16vw;

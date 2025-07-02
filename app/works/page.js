@@ -7,6 +7,7 @@ import pistacio from "../../public/pistacio.jpg";
 import woman from "../../public/woman.jpg";
 import Footer from "../footer";
 import vytas from "../../public/vytas.jpg";
+import farm from "../../public/farm.jpeg";
 import selfportrait from "../../public/selfportrait.jpg";
 import porcelain from "../../public/porcelain.jpg";
 import gandrai from "../../public/gandrai.jpg";
@@ -204,6 +205,29 @@ export default function Works() {
           </div>
 
           <div className="art_container_two">
+            <div className="art_background ten">
+              <div className="art_piece">
+                <Image
+                  className="art_img"
+                  src={selfportrait}
+                  alt=""
+                  priority
+                  onClick={() => openModal(selfportrait)}
+                  style={{ cursor: "pointer" }}
+                />
+              </div>
+            </div>
+            <div className="art_text_container">
+              <div className="art_text_styling">
+                <div className="art_text">SELF PORTRAIT</div>
+                <div className="art-details">PASTEL ON PAPER</div>
+                <div className="art-details">16" X 12"</div>
+              </div>
+              <div className="art_text_styling_two">2022</div>
+            </div>
+          </div>
+
+          <div className="art_container_two">
             <div className="art_background seven">
               <div className="art_piece">
                 <Image
@@ -277,14 +301,14 @@ export default function Works() {
           </div>
 
           <div className="art_container_two">
-            <div className="art_background ten">
+            <div className="art_background fifteen">
               <div className="art_piece">
                 <Image
                   className="art_img"
-                  src={selfportrait}
+                  src={farm}
                   alt=""
                   priority
-                  onClick={() => openModal(selfportrait)}
+                  onClick={() => openModal(farm)}
                   style={{ cursor: "pointer" }}
                 />
               </div>
@@ -292,10 +316,10 @@ export default function Works() {
             <div className="art_text_container">
               <div className="art_text_styling">
                 <div className="art_text">SELF PORTRAIT</div>
-                <div className="art-details">PASTEL ON PAPER</div>
-                <div className="art-details">16" X 12"</div>
+                <div className="art-details">OIL ON CANVAS</div>
+                <div className="art-details">25" X 21"</div>
               </div>
-              <div className="art_text_styling_two">2022</div>
+              <div className="art_text_styling_two">2025</div>
             </div>
           </div>
 
