@@ -315,7 +315,7 @@ export default function Works() {
             </div>
             <div className="art_text_container">
               <div className="art_text_styling">
-                <div className="art_text">SELF PORTRAIT</div>
+                <div className="art_text">KAIMIŠKAS VAKARAS</div>
                 <div className="art-details">OIL ON CANVAS</div>
                 <div className="art-details">25" X 21"</div>
               </div>
